@@ -792,6 +792,25 @@ section {background: var(--light-color);}
   border-radius: 20px;
   opacity: 0.9;
 }
+.custom-list {
+  list-style-type: disc;
+  padding-left: 20px;
+}
+.dash-list {
+  list-style-type: none;
+  padding-left: 0;
+  margin: 0;
+}
+.dash-list li::before {
+  content: "-";
+  margin-right: 8px; /* Espacio entre el guion y el texto */
+  color: #000; /* Color del guion */
+}
+
+
+/*--------------------------------------------------------------
+#  Section
+--------------------------------------------------------------*/
 
 /*--------------------------------------------------------------
 # About Us Section
