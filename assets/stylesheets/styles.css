@@ -1511,7 +1511,7 @@ section {background: var(--light-color);}
 .hero {
   width: 100%;
   position: relative;
-  background: url(../images/hero-bg.png) center center;
+  background: url(../images/fondoWeb.gif) center center;
   background-size: cover;
   padding: 60px 0 0 0;
   height: 100vh;
