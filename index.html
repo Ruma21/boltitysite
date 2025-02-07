@@ -750,14 +750,21 @@
             <div class="contact-form-box contact-form contact-form-3">
               <div class="form-container-box">
                 <div class="form-container-box">
-                  <form class="contact-form form" id="ajax-contact" method="POST" action="https://formspree.io/f/xqaelbab">
+                  <form class="contact-form form" id="ajax-contact" method="post">
                     <div class="controls">
                       <div class="row">
                         <!-- Campo Nombre -->
                         <div class="col-md-6">
                           <div class="form-group form-input-box">
-                            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre*" required="required"
-                              data-error="Se requiere el nombre.">
+                            <input 
+                              type="text" 
+                              class="form-control" 
+                              id="name" 
+                              name="name" 
+                              placeholder="Nombre*" 
+                              required="required" 
+                              data-error="Se requiere el nombre."
+                            >
                             <div class="help-block with-errors"></div>
                           </div>
                         </div>
@@ -765,8 +772,15 @@
                         <!-- Campo Email -->
                         <div class="col-md-6">
                           <div class="form-group form-input-box">
-                            <input type="email" class="form-control" id="email" name="email" placeholder="Email*"
-                              required="required" data-error="Se requiere un correo electrónico válido.">
+                            <input 
+                              type="email" 
+                              class="form-control" 
+                              id="email" 
+                              name="email" 
+                              placeholder="Email*" 
+                              required="required" 
+                              data-error="Se requiere un correo electrónico válido."
+                            >
                             <div class="help-block with-errors"></div>
                           </div>
                         </div>
@@ -774,15 +788,28 @@
                         <!-- Campo Asunto -->
                         <div class="col-md-12">
                           <div class="form-group form-input-box">
-                            <input type="text" class="form-control" name="subject" placeholder="Asunto" required="required">
+                            <input 
+                              type="text" 
+                              class="form-control" 
+                              name="subject" 
+                              placeholder="Asunto" 
+                              required="required"
+                            >
                           </div>
                         </div>
                 
                         <!-- Campo Mensaje -->
                         <div class="col-12">
                           <div class="form-group form-input-box">
-                            <textarea class="form-control" id="message" name="message" rows="7" placeholder="Escribe tu mensaje*"
-                              required="required" data-error="Por favor, déjanos un mensaje."></textarea>
+                            <textarea 
+                              class="form-control" 
+                              id="message" 
+                              name="Mensaje" 
+                              rows="7" 
+                              placeholder="Escribe tu mensaje*" 
+                              required="required" 
+                              data-error="Por favor, déjanos un mensaje."
+                            ></textarea>
                             <div class="help-block with-errors"></div>
                           </div>
                         </div>
@@ -792,17 +819,45 @@
                           <button type="submit" data-text="Send Message">Enviar Mensaje</button>
                         </div>
                 
-                        <!-- Mensaje de éxito -->
+                        <!-- Mensajes de éxito o error -->
                         <div class="messages">
-                          <div class="alert alert-success alert-dismissable hidden" id="msgSubmit">
-                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                          <div 
+                            class="alert alert-success alert-dismissable hidden" 
+                            id="msgSubmit"
+                          >
+                            <button 
+                              type="button" 
+                              class="close" 
+                              data-dismiss="alert" 
+                              aria-hidden="true"
+                            >
+                              &times;
+                            </button>
                             ¡Gracias!, Tu mensaje ha sido enviado
+                          </div>
+                          <div 
+                            class="alert alert-danger alert-dismissable hidden" 
+                            id="msgError"
+                          >
+                            <button 
+                              type="button" 
+                              class="close" 
+                              data-dismiss="alert" 
+                              aria-hidden="true"
+                            >
+                              &times;
+                            </button>
+                            Hubo un error al enviar el mensaje. Por favor, inténtalo de nuevo.
                           </div>
                         </div>
                       </div>
                     </div>
                   </form>
                 </div>
+                
+                <!-- Script para manejar el envío del formulario con AJAX -->
+                <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+                
               </div>
             </div>
           </div>
