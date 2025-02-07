@@ -15,7 +15,7 @@
     $message = "Message " . $first_name . " " . $last_name . " wrote the following:" . "\n\n" . $_POST['message'];
 
     $headers = "From:" . $from . "\r\n" .
-        'Reply-To: webmaster@example.com' . "\r\n" .
+        'Reply-To: soporte@boltity.com' . "\r\n" .
         'X-Mailer: PHP/' . phpversion();
 
     $headers2 = "From:" . $to;
