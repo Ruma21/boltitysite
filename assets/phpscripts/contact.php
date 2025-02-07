@@ -1,10 +1,5 @@
 <?php
-    /*  
-        Template name    : Technoit - IT Solutions & Business Services Multipurpose Responsive Website Template
-        Author           : ZRTHEMES
-        Version          : 1.0
-        File Description : Contact PHP file of the template
-    */
+    
     //this is your Email address
     //kinldy update your email here
     $to = "soporte@boltity.com"; 

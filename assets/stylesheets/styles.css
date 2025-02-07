@@ -158,6 +158,47 @@ h6 {
 /*--------------------------------------------------------------
 # Sections & Section Header
 --------------------------------------------------------------*/
+
+
+ /* Estilo base para el botón fijo */
+ .whatsapp-button {
+  position: fixed; /* Fija el botón en la pantalla */
+  bottom: 20px; /* Distancia desde la parte inferior */
+  right: 20px; /* Distancia desde la izquierda */
+  width: 60px; /* Ancho del círculo */
+  height: 60px; /* Altura del círculo */
+  background-color: #075E54; /* Color verde oscuro de WhatsApp */
+  border-radius: 50%; /* Hace que el botón sea circular */
+  display: flex; /* Centra el contenido dentro del botón */
+  align-items: center; /* Centra verticalmente */
+  justify-content: center; /* Centra horizontalmente */
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Sombra para dar efecto flotante */
+  text-decoration: none; /* Quita el subrayado si es un enlace */
+  z-index: 1000; /* Asegura que esté por encima de otros elementos */
+  transition: all 0.3s ease; /* Animación suave al pasar el cursor */
+}
+
+/* Efecto hover para el botón */
+.whatsapp-button:hover {
+  background-color: #34B7F1; /* Cambia a un verde más brillante */
+  transform: scale(1.1); /* Aumenta ligeramente el tamaño */
+  box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.3); /* Sombra más pronunciada */
+}
+
+/* Estilo para el ícono de WhatsApp */
+.whatsapp-icon {
+  color: white; /* Color blanco para el ícono */
+  font-size: 30px; /* Tamaño del ícono */
+  transition: all 0.3s ease; /* Animación suave para el ícono */
+}
+
+/* Efecto hover para el ícono */
+.whatsapp-button:hover .whatsapp-icon {
+  color: #fff; /* Mantén el color blanco */
+  transform: rotate(360deg); /* Gira el ícono al pasar el cursor */
+}
+
+
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -296,7 +337,7 @@ img:hover {
   position: fixed;
   visibility: hidden;
   opacity: 0;
-  right: 15px;
+  left: 15px;
   bottom: -15px;
   z-index: 99999;
   background: var(--color-primary);
@@ -1058,7 +1099,7 @@ section {background: var(--light-color);}
 # Call To Action Section
 --------------------------------------------------------------*/
 .call-to-action {
-  background: url(../images/hero-bg.png) center left;
+  background: url(../images/fondos/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg) center left;
   background-size: cover;
   padding: 150px 0px;
   border-radius: 0px;
@@ -1511,7 +1552,7 @@ section {background: var(--light-color);}
 .hero {
   width: 100%;
   position: relative;
-  background: url(../images/fondoWeb.gif) center center;
+  background: url(../images/fondos/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg) center center;
   background-size: cover;
   padding: 60px 0 0 0;
   height: 100vh;
@@ -1638,7 +1679,7 @@ section {background: var(--light-color);}
 
 @media (max-width: 991px) {
   .hero {
-    background: url(../images/hero-bg.png) center center;
+    background: url(../images/fondos/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg) center center;
   }
   .hero h2 {
     font-size: 22px;
@@ -3346,7 +3387,7 @@ canvas{
 
 
 .footer-section {
-  background: url(../images/hero-bg.png) center left;
+  background: url(../images/fondos/joshua-reddekopp-SyYmXSDnJ54-unsplash.jpg) center left;
   background-size: cover;
   padding: 60px 0;
   border-radius: 0px;
