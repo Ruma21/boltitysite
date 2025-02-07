@@ -749,49 +749,50 @@
           <div class="col-lg-8 col-md-12" data-aos="fade-left">
             <div class="contact-form-box contact-form contact-form-3">
               <div class="form-container-box">
-                <form class="contact-form form" id="ajax-contact" method="post" action="assets/phpscripts/contact.php">
-                  <div class="controls">
-                    <div class="row">
-                      <div class="col-md-6">
-                        <div class="form-group form-input-box">
-                          <input type="text" class="form-control" id="name" name="name" placeholder="Nombre*"
-                            required="required" data-error="Se requiere el nombre.">
-                          <div class="help-block with-errors"></div>
+                <div class="form-container-box">
+                  <form class="contact-form form" id="ajax-contact" method="POST" action="https://formspree.io/f/soporte@boltity.com">
+                    <div class="controls">
+                      <div class="row">
+                        <div class="col-md-6">
+                          <div class="form-group form-input-box">
+                            <input type="text" class="form-control" id="name" name="name" placeholder="Nombre*" required="required"
+                              data-error="Se requiere el nombre.">
+                            <div class="help-block with-errors"></div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-6">
-                        <div class="form-group form-input-box">
-                          <input type="email" class="form-control" id="email" name="email" placeholder="Email*"
-                            required="required" data-error="Se requiere un correo electrónico válido.">
-                          <div class="help-block with-errors"></div>
+                        <div class="col-md-6">
+                          <div class="form-group form-input-box">
+                            <input type="email" class="form-control" id="email" name="email" placeholder="Email*"
+                              required="required" data-error="Se requiere un correo electrónico válido.">
+                            <div class="help-block with-errors"></div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-12">
-                        <div class="form-group form-input-box">
-                          <input type="text" class="form-control" name="subject" placeholder="Asunto"
-                            required="required">
+                        <div class="col-md-12">
+                          <div class="form-group form-input-box">
+                            <input type="text" class="form-control" name="subject" placeholder="Asunto" required="required">
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-12">
-                        <div class="form-group form-input-box">
-                          <textarea class="form-control" id="message" name="Mensaje" rows="7"
-                            placeholder="Escribe tu mensaje*" required="required"
-                            data-error="Por favor, déjanos un mensaje."></textarea>
-                          <div class="help-block with-errors"></div>
+                        <div class="col-12">
+                          <div class="form-group form-input-box">
+                            <textarea class="form-control" id="message" name="message" rows="7" placeholder="Escribe tu mensaje*"
+                              required="required" data-error="Por favor, déjanos un mensaje."></textarea>
+                            <div class="help-block with-errors"></div>
+                          </div>
                         </div>
-                      </div>
-                      <div class="col-md-12">
-                        <button type="submit" data-text="Send Message">Enviar Mensaje</button>
-                      </div>
-                      
-                      <div class="messages">
-                        <div class="alert alert alert-success alert-dismissable alert-dismissable hidden"
-                          id="msgSubmit"><button type="button" class="close" data-dismiss="alert"
-                            aria-hidden="true">&times;</button> ¡Gracias!, Tu mensaje ha sido enviado </div>
+                        <div class="col-md-12">
+                          <button type="submit" data-text="Send Message">Enviar Mensaje</button>
+                        </div>
+                
+                        <div class="messages">
+                          <div class="alert alert-success alert-dismissable hidden" id="msgSubmit">
+                            <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                            ¡Gracias!, Tu mensaje ha sido enviado
+                          </div>
+                        </div>
                       </div>
                     </div>
-                  </div>
-                </form>
+                  </form>
+                </div>
               </div>
             </div>
           </div>
